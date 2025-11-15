@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-const API_KEY = "da99cea7";
+const API_KEY = process.env.OMDB_KEY!;
+
 
 async function getMovie(id: string) {
   const res = await fetch(

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SafeImage from "./components/SafeImage";
 
-const API_KEY = "da99cea7";
+const API_KEY = process.env.OMDB_KEY!;
 
 async function getMovies() {
   const res = await fetch(
